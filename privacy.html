@@ -2,37 +2,286 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Política de Privacidad – Handover Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad · Handover Pro</title>
+
+  <meta name="description" content="Política de Privacidad de Handover Pro. Información sobre el tratamiento de datos y medidas de seguridad." />
+  <meta name="author" content="Handover Pro" />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #1f2937;
+      line-height: 1.55;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0.25rem 0;
+      font-size: 1.6rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      margin-top: 0;
+      color: #0f172a;
+      font-size: 1.25rem;
+    }
+    h3 {
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+      font-size: 1.05rem;
+    }
+    ul {
+      margin: 0.75rem 0 0 1.25rem;
+    }
+    li {
+      margin: 0.35rem 0;
+    }
+    .muted {
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-weight: 600;
+    }
+    .note {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      padding: 0.9rem 1rem;
+      border-radius: 8px;
+      color: #9a3412;
+      font-size: 0.95rem;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Política de Privacidad</h1>
+  <header>
+    <span class="pill">Legal</span>
+    <h1>Política de Privacidad</h1>
+    <p>Handover Pro · Versión básica para sitio informativo</p>
+    <a class="back" href="index.html">← Volver al inicio</a>
+  </header>
 
-<p>
-Handover Pro es una plataforma en fase piloto destinada a la gestión de relevos de turnos clínicos.
-</p>
+  <main>
+    <div class="card">
+      <h2>Resumen</h2>
+      <p>
+        Esta Política de Privacidad describe, de forma general, cómo <strong>Handover Pro</strong> trata la información
+        cuando se utiliza su aplicación y servicios asociados.
+      </p>
+      <p class="muted">
+        Importante: Este documento es una política básica para un piloto. Antes de operar en producción en una clínica,
+        conviene revisarla con asesoría legal y adecuarla a la normativa aplicable en tu país.
+      </p>
+      <div class="note">
+        <strong>Compromiso clave:</strong> los registros de auditoría y telemetría deben evitar contener datos clínicos identificables (PHI).
+        Se usan identificadores seudonimizados cuando sea posible.
+      </div>
+    </div>
 
-<h2>Datos personales</h2>
-<p>
-La plataforma no muestra ni publica datos reales de pacientes en este sitio web informativo.
-Los identificadores clínicos utilizados en la aplicación son pseudonimizados.
-</p>
+    <div class="card">
+      <h2>1) Responsable y contacto</h2>
+      <p>
+        <strong>Responsable:</strong> Handover Pro (proyecto en piloto).<br />
+        <strong>Contacto:</strong> agrega aquí un correo de contacto (ej. <code>contacto@tudominio.cl</code>).
+      </p>
+    </div>
 
-<h2>Uso de la información</h2>
-<p>
-Los datos registrados en la aplicación se utilizan exclusivamente para fines asistenciales,
-de continuidad del cuidado y auditoría clínica.
-</p>
+    <div class="card">
+      <h2>2) Alcance</h2>
+      <p>
+        Esta política aplica a:
+      </p>
+      <ul>
+        <li>El sitio informativo (<code>index.html</code> y páginas asociadas).</li>
+        <li>La app móvil Handover Pro.</li>
+        <li>Servicios backend necesarios para autenticación, sincronización y auditoría.</li>
+      </ul>
+    </div>
 
-<h2>Seguridad</h2>
-<p>
-Se aplican medidas técnicas y organizativas razonables para proteger la información.
-</p>
+    <div class="card">
+      <h2>3) Información que se puede tratar</h2>
 
-<h2>Contacto</h2>
-<p>
-Para consultas relacionadas con privacidad, puede escribir a: contacto@handoverpro.app
-</p>
+      <h3>3.1 Datos de cuenta y acceso</h3>
+      <ul>
+        <li>Identificador de usuario (por ejemplo, <code>userId</code>).</li>
+        <li>Rol y permisos (por ejemplo, enfermería/administrador).</li>
+        <li>Tokens de sesión y datos técnicos necesarios para autenticación (p. ej., mediante un proveedor como Auth0).</li>
+      </ul>
 
-<p><em>Última actualización: 2026</em></p>
+      <h3>3.2 Datos operativos y técnicos</h3>
+      <ul>
+        <li>Eventos de auditoría (p. ej., “apertura de paciente”, “edición”, “sincronización”).</li>
+        <li>Fechas y horas de acciones (timestamps).</li>
+        <li>Estado de cola offline/sincronización (sin contenido clínico).</li>
+        <li>Datos técnicos de diagnóstico (errores, estado del sistema), evitando incluir información clínica.</li>
+      </ul>
+
+      <h3>3.3 Datos clínicos</h3>
+      <p>
+        La app está orientada a entornos clínicos y <strong>puede</strong> gestionar información clínica según el despliegue del piloto.
+        La configuración recomendada es:
+      </p>
+      <ul>
+        <li>Minimizar el acceso a datos identificables.</li>
+        <li>Usar seudonimización cuando sea viable (IDs internos en lugar de nombres completos).</li>
+        <li>Restringir roles y permisos para acceso a logs/auditoría.</li>
+      </ul>
+      <p class="muted">
+        El sitio web informativo (GitHub Pages) no debe incluir datos reales de pacientes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4) Finalidades</h2>
+      <ul>
+        <li>Proveer funcionalidades de registro de turnos y continuidad del cuidado.</li>
+        <li>Autenticar usuarios y controlar accesos.</li>
+        <li>Mejorar trazabilidad y seguridad mediante auditoría de acciones.</li>
+        <li>Soportar sincronización de datos cuando el dispositivo recupera conectividad.</li>
+        <li>Detectar fallos técnicos y mejorar la estabilidad del sistema.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5) Base de tratamiento</h2>
+      <p>
+        En un piloto, el tratamiento suele basarse en:
+      </p>
+      <ul>
+        <li><strong>Ejecución del servicio</strong> (prestación de la plataforma a usuarios autorizados).</li>
+        <li><strong>Interés legítimo</strong> en seguridad, auditoría y prevención de incidentes.</li>
+        <li><strong>Cumplimiento</strong> de obligaciones aplicables (si corresponde) en materia de seguridad y trazabilidad.</li>
+      </ul>
+      <p class="muted">
+        Si tu jurisdicción exige consentimiento explícito para ciertos tratamientos, debes incorporar el flujo correspondiente en la app.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6) Compartición con terceros</h2>
+      <p>Handover Pro puede utilizar proveedores para operar el servicio, por ejemplo:</p>
+      <ul>
+        <li>Proveedor de autenticación (p. ej., Auth0) para inicio de sesión y emisión de tokens.</li>
+        <li>Infraestructura/hosting (si el backend está desplegado en un proveedor cloud).</li>
+      </ul>
+      <p class="muted">
+        No se “vende” información a terceros. Cualquier proveedor debe operar bajo acuerdos y medidas de seguridad razonables.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7) Seguridad</h2>
+      <ul>
+        <li>Acceso restringido por roles y autenticación.</li>
+        <li>Uso de HTTPS/TLS en comunicaciones.</li>
+        <li>Registro de auditoría para trazabilidad (sin PHI innecesaria).</li>
+        <li>Principio de mínimo privilegio para usuarios y servicios.</li>
+      </ul>
+      <p class="muted">
+        Ningún sistema es 100% infalible, pero se aplican medidas razonables para prevenir accesos no autorizados.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8) Retención</h2>
+      <p>
+        Los datos se conservan por el tiempo necesario para:
+      </p>
+      <ul>
+        <li>Operación del servicio y continuidad asistencial.</li>
+        <li>Auditoría y seguridad (por un periodo definido por la clínica o normativa).</li>
+        <li>Requerimientos legales aplicables.</li>
+      </ul>
+      <p class="muted">
+        Para el piloto, define una política simple (ej. “auditoría 90 días”, “errores 30 días”) y ajústala con la clínica.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9) Derechos y solicitudes</h2>
+      <p>
+        Dependiendo de tu país, los usuarios (y/o la organización clínica) pueden tener derechos de acceso, rectificación,
+        eliminación, oposición o portabilidad. Para solicitudes, escribe a:
+        <strong>(tu email de contacto)</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>10) Cambios a esta política</h2>
+      <p>
+        Podemos actualizar esta política para reflejar mejoras del producto o cambios regulatorios.
+        Publicaremos la versión actualizada en este sitio.
+      </p>
+      <p class="muted">
+        Última actualización: <strong>2026-01-29</strong>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>11) Nota sobre GitHub Pages</h2>
+      <p>
+        Este sitio está alojado como página estática. No debería recolectar formularios ni datos personales.
+        Si agregas analítica (por ejemplo, métricas de visitas), deberías informarlo aquí y permitir su desactivación según normativa.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Handover Pro · Política de Privacidad
+  </footer>
 </body>
 </html>
