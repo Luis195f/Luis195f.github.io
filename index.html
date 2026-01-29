@@ -31,6 +31,10 @@
     h1, h2 {
       color: #0f172a;
     }
+    header h1, header p {
+      color: white;
+      margin: 0.5rem 0;
+    }
     .card {
       background: white;
       border-radius: 8px;
@@ -38,11 +42,28 @@
       margin-bottom: 1.5rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
+    ul {
+      margin: 0.75rem 0 0 1.25rem;
+    }
+    li {
+      margin: 0.4rem 0;
+    }
+    .muted {
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
       color: #6b7280;
       font-size: 0.9rem;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -50,17 +71,29 @@
 <body>
   <header>
     <h1>Handover Pro</h1>
-    <p>Relevo de turnos clínicos, seguro y estandarizado</p>
+    <p><strong>Relevo de turnos clínicos seguro, estandarizado y trazable.</strong></p>
+    <p class="muted">Plataforma digital para equipos de enfermería y salud, diseñada para mejorar continuidad del cuidado y reducir errores entre turnos.</p>
   </header>
 
   <main>
     <div class="card">
       <h2>¿Qué es Handover Pro?</h2>
       <p>
-        Handover Pro es una aplicación diseñada para apoyar el relevo de turnos de
-        enfermería y equipos clínicos, asegurando continuidad del cuidado,
-        trazabilidad y calidad de la información.
+        Handover Pro es una plataforma digital diseñada para equipos de enfermería y salud
+        que necesitan registrar, validar y consultar entregas de turno de forma clara,
+        estructurada y conforme a estándares clínicos.
       </p>
+    </div>
+
+    <div class="card">
+      <h2>¿Por qué Handover Pro?</h2>
+      <ul>
+        <li>✔ Reduce errores de comunicación entre turnos</li>
+        <li>✔ Formularios estructurados y escalas clínicas (ej. Glasgow)</li>
+        <li>✔ Terminologías estandarizadas (FHIR, SNOMED, LOINC)</li>
+        <li>✔ Registro de auditoría: quién accedió y cuándo</li>
+        <li>✔ Diseñado para uso clínico real, no burocrático</li>
+      </ul>
     </div>
 
     <div class="card">
@@ -75,10 +108,13 @@
     </div>
 
     <div class="card">
-      <h2>¿Para quién está pensado?</h2>
+      <h2>¿Para quién?</h2>
       <p>
-        Clínicas, hospitales y centros de salud que buscan mejorar la seguridad del
-        paciente y profesionalizar el proceso de cambio de turno.
+        Clínicas, hospitales y centros de salud que buscan mejorar la continuidad del cuidado,
+        la seguridad del paciente y la trazabilidad del trabajo de enfermería.
+      </p>
+      <p class="muted">
+        (Recomendado) Revisa nuestra <a href="privacy.html">Política de privacidad</a>.
       </p>
     </div>
   </main>
